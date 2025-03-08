@@ -1,6 +1,7 @@
 package fi.oulu.tol.sqat.tests; 
    import static org.junit.Assert.*;
-   import java.util.List;
+
+import java.util.List;
    import org.junit.Test;
    import fi.oulu.tol.sqat.GildedRose;
    import fi.oulu.tol.sqat.Item;
@@ -217,4 +218,9 @@ package fi.oulu.tol.sqat.tests;
            int quality = items.get(0).getQuality();
            assertEquals(80, quality);
        }
+       
+       @Test
+   	public void testMain() {
+   		GildedRose.main(new String[0]);
+   	}     
    }
